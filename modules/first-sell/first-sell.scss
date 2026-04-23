@@ -77,34 +77,34 @@
           display: none;
         }
         &[data-item="1"] {
-            background-image: url('./images/icons/zhaluzi.svg');
+            background-image: url('images/icons/zhaluzi.svg');
         }
         &[data-item="2"] {
-            background-image: url('./images/icons/rulon.svg');
+            background-image: url('images/icons/rulon.svg');
         }
         &[data-item="3"] {
-            background-image: url('./images/icons/moskit.svg');
+            background-image: url('images/icons/moskit.svg');
         }
         &[data-item="4"] {
-            background-image: url('./images/icons/plisse.svg');
+            background-image: url('images/icons/plisse.svg');
         }
         &[data-item="5"] {
-            background-image: url('./images/icons/electr.svg');
+            background-image: url('images/icons/electr.svg');
         }
         &[data-item="6"] {
-            background-image: url('./images/icons/vnesh.svg');
+            background-image: url('images/icons/vnesh.svg');
         }
         &[data-item="7"] {
-            background-image: url('./images/icons/photopec.svg');
+            background-image: url('images/icons/photopec.svg');
         }
         &[data-item="8"] {
-            background-image: url('./images/icons/drl.svg');
+            background-image: url('images/icons/drl.svg');
         }
         &[data-item="9"] {
-            background-image: url('./images/icons/akcii.svg');
+            background-image: url('images/icons/akcii.svg');
         }
         &[data-item="10"] {
-            background-image: url('./images/icons/kalkul.svg');
+            background-image: url('images/icons/kalkul.svg');
         }
 
         &:not(span):hover {
@@ -115,7 +115,7 @@
 
 .order {
     position: relative;
-    background: url('./images/mainfon.png');
+    background: url('images/mainfon.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -127,7 +127,7 @@
     width: 25px;
     position: absolute;
     bottom: 15px;
-    background-image: url('./images/icons/srch.svg');
+    background-image: url('images/icons/srch.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +189,7 @@
     content: '';
     width: 18px;
     height: 14px;
-    background-image: url('./images/icons/order.svg');
+    background-image: url('images/icons/order.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
