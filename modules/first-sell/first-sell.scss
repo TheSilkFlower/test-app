@@ -1,0 +1,238 @@
+.first-sell {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.sidebar {
+    flex: 0 0 70px;
+    height: 100%;
+    position: relative;
+    background: rgb(242, 246, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    background: rgb(184, 76, 116);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 15px 0 45px 0;
+}
+.burger {
+    position: relative;
+    width: 25px;
+    height: 1px;
+    background: rgb(65, 122, 130);
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 1px;
+        background: rgb(65, 122, 130);
+    }
+    &::before {
+        top: 5px;
+    }
+    &::after {
+        bottom: 5px;
+    }
+}
+.menu {
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-list__item {
+        list-style-type: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 25px;
+        width: 25px;
+        margin: 5px auto;
+        cursor: pointer;
+        transition: .2s;
+
+        span {
+          display: none;
+        }
+        &[data-item="1"] {
+            background-image: url('/images/icons/zhaluzi.svg');
+        }
+        &[data-item="2"] {
+            background-image: url('/images/icons/rulon.svg');
+        }
+        &[data-item="3"] {
+            background-image: url('/images/icons/moskit.svg');
+        }
+        &[data-item="4"] {
+            background-image: url('/images/icons/plisse.svg');
+        }
+        &[data-item="5"] {
+            background-image: url('/images/icons/electr.svg');
+        }
+        &[data-item="6"] {
+            background-image: url('/images/icons/vnesh.svg');
+        }
+        &[data-item="7"] {
+            background-image: url('/images/icons/photopec.svg');
+        }
+        &[data-item="8"] {
+            background-image: url('/images/icons/drl.svg');
+        }
+        &[data-item="9"] {
+            background-image: url('/images/icons/akcii.svg');
+        }
+        &[data-item="10"] {
+            background-image: url('/images/icons/kalkul.svg');
+        }
+
+        &:not(span):hover {
+            transform: scale(1.15);
+        }
+    }
+}
+
+.order {
+    position: relative;
+    background: url('../images/mainfon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.menu-search {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    background-image: url('/images/icons/srch.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.buy-block {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    color: rgb(5, 46, 76);
+    font-size: 32px;
+}
+
+.buy-block__title {
+    margin: 0;
+}
+
+.buy-block__info {
+    font-size: 16px;
+}
+
+.sample {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sample-btn,
+.calc-btn {
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.sample-btn {
+    background: rgb(184, 76, 116);
+    color: white;
+    border: none;
+}
+
+.sample__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    background: white;
+    width: 40px;
+    height: 40px;
+}
+
+.sample__basket::before {
+    display: block;
+    content: '';
+    width: 18px;
+    height: 14px;
+    background-image: url('/images/icons/order.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calc-btn {
+    margin-top: 10px;
+    background: white;
+    color: rgb(5, 46, 76);
+    border: none;
+}
+
+.sample__basket,
+.sample-btn,
+.calc-btn {
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media screen and (max-width: 1040px) {
+    .sample {
+        right: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar,
+    .sample {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .buy-block {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 40px 0 0 40px;
+    }
+    .buy-block__title {
+        font-size: 50px;
+    }
+    .buy-block__info {
+        width: 250px;
+        margin: 40px 0;
+    }
+}
